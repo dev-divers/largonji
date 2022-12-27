@@ -1,0 +1,24 @@
+body {
+  height: 100%;
+  background: linear-gradient(90deg, #ffc0cb 50%, #00ffff 50%);
+}
+
+.leftColumn {
+  width: 50%;
+  float: left;
+}
+
+.rightColumn {
+  width: 50%;
+  float: left;
+}
+
+.title {
+  text-align: center;
+}
+
+.inner-div {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 3px;
+}
