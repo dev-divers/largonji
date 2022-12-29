@@ -277,4 +277,160 @@ const baseLoucherbemWords = {
   poil: "à loilpé",
 };
 
+/*
+
+ *** PRONOUNS ***
+
+ Some adjectives have the same form as pronouns or resemble them,
+ but the adjective accompanies the noun, while the pronoun replaces the noun
+
+ Notes : 
+- In the current version, the program is not able to distinguish pronouns from adjectives 
+- Duplicates were discarded and some compound forms were discarded. For example:
+ "les mêmes"  has been removed from the undefined pronouns list, only "mêmes" remains
+- For ease of use, a concatenation of all pronouns has been made at the end
+ */
+
+const personalPronouns = [
+  "je",
+  "me",
+  "m'",
+  "moi",
+  "tu",
+  "te",
+  "t'",
+  "toi",
+  "nous",
+  "vous",
+  "il",
+  "elle",
+  "ils",
+  "elles",
+  "se",
+  "en",
+  "y",
+  "le",
+  "la",
+  "l'",
+  "les",
+  "lui",
+  "soi",
+  "leur",
+  "eux",
+  "lui",
+  "leur",
+];
+
+const demonstrativePronouns = [
+  "celui",
+  "celui-ci",
+  "celui-là",
+  "celle",
+  "celle-ci",
+  "celle-là",
+  "ceux",
+  "ceux-ci",
+  "ceux-là",
+  "celles",
+  "celles-ci",
+  "celles-là",
+  "ce",
+  "ceci",
+  "cela",
+  "ça",
+];
+
+const possessivePronouns = [
+  "mien",
+  "tien",
+  "sien",
+  "mienne",
+  "tienne",
+  "sienne",
+  "miens",
+  "tiens",
+  "siens",
+  "miennes",
+  "tiennes",
+  "siennes",
+  "nôtre",
+  "vôtre",
+  "le",
+  "leur",
+  "nôtres",
+  "vôtres",
+  "leurs",
+];
+
+const relativePronoums = [
+  "qui",
+  "que",
+  "quoi",
+  "dont",
+  "où",
+  "lequel",
+  "auquel",
+  "duquel",
+  "laquelle",
+  "lesquels",
+  "auxquels",
+  "desquels",
+  "lesquelles",
+  "auxquelles",
+  "desquelles",
+];
+
+const interrogativePronouns = ["qu'est-ce"];
+
+const undefinedPronouns = [
+  "on",
+  "tout",
+  "un",
+  "une",
+  "l'un",
+  "l'une",
+  "uns",
+  "unes",
+  "autre",
+  "autres",
+  "aucun",
+  "aucune",
+  "aucuns",
+  "aucunes",
+  "certain",
+  "certaine",
+  "certains",
+  "certaines",
+  "tel",
+  "telle",
+  "tels",
+  "telles",
+  "tout",
+  "toute",
+  "tous",
+  "toutes",
+  "même",
+  "mêmes",
+  "nul",
+  "nulle",
+  "nuls",
+  "nulles",
+  "quelqu'un",
+  "quelqu'une",
+  "quelques",
+  "personne",
+  "autrui",
+  "quiconque",
+];
+
+// Concatenation of all Pronouns
+
+const pronounsConcatenation = personalPronouns.concat(
+  demonstrativePronouns,
+  possessivePronouns,
+  relativePronoums,
+  interrogativePronouns,
+  undefinedPronouns
+);
+
 // to be continued
